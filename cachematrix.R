@@ -25,7 +25,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(s)
   }
-  ## If retrieved value was NULL, we get the matric and solve
+  ## If retrieved value was NULL, we get the matrix and solve
   data <- x$get()
   s <- solve(data, ...)
   ## Set the solve value in cache
